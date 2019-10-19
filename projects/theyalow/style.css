@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+body {
+    background-color: white;
+
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 110px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footer {
+    background-color: #4c4c4c;
+    height: 64px;
+    box-shadow: 0px -5px 2px #1a1a1a;
+}
+
+.container {
+    display: flex;
+    max-width: 1300px;
+    padding-left:  10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+
+.banner-background {
+    display: flex;
+    background-image: url("img/banner_header_bck.png");
+    max-width: 1300px;
+    height: 566px;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex-wrap: wrap;
+    padding-bottom: 21px;
+    align-content: baseline;
+}
+
+.s1 {
+    background-image: url("img/section_1_bck.png");
+    height: 509px;   
+}
+
+.s2 {
+    background-image: url("img/section_2_bck.png");
+    height: 499px;
+}
+
+.logo {
+    display: flex; 
+    align-items: center;
+    max-height: 79px;
+    max-width: 315px;
+    box-sizing: border-box;
+   /* margin-left: 140px; */
+}
+
+.logo-pic-1 {
+    display: inline-block;
+    background-image: url("img/logo/logo-pic-1.png"); 
+    background-size: contain;
+    padding: 0;
+}
+
+
+.logo-pic-2 {
+    opacity: 0.5;
+}
+
+.logo-pic-size-header {
+    max-width: 79px;
+    max-height: 79px;
+
+}
+
+.logo-pic-size-footer {
+    max-width: 51px;
+    max-height: 51px;
+
+}
+
+.logo-text {
+    display: inline-block;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 19px;
+    margin-left: 11px;  
+    box-sizing: border-box;
+  
+}
+
+.nav {
+    display: inline-flex;
+    align-items: stretch;
+    background-color: #f5c506;
+    width: 392px;
+    height: 41px;
+    padding-left: 20px;
+    margin-top: 33px;
+    box-shadow: -3px -3px  rgba(245, 197, 6, 0.6), -6px -6px  rgba(245, 197, 6, 0.4);
+   
+}
+
+.nav :nth-child(3) {
+    border-right: 0; 
+
+}
+
+
+.nav-button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    max-width: 134px;
+    padding: 0 10px;
+    border-right: 1px solid #b99403;
+    color: #b99403;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-video {
+    max-width: 100%;
+    height: auto;
+    /*height: 327px;*/
+}
+.video-title {
+    width: 25%;
+    height: 121px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+
+
+.yellow {
+    color: #f5c506;
+}
+
+.white {
+    color: white;
+}
+
+.gray {
+    color: rgba(169, 169, 167, 255);
+}
+
+.icon-area {
+    background-color: white;
+    height: 212px;
+    align-items: baseline;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 38px 0;
+    width: 33%;
+    height: 70%;
+    text-align: center;
+    border-left: 1px solid #d4d4d4; 
+    border-right: 1px solid #d4d4d4;
+    
+}
+
+.icon-area :nth-child(2) {
+    border-left: 0; 
+    border-right: 0;
+}
+
+.section-header {
+    width: 517px;
+    height: 28px;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+    margin-top: 42px;
+
+}
+
+
+.text {
+    text-align: left;
+    overflow: hidden;
+}
+
+.text-s1 {
+    font-size: 30px;
+}
+
+.text-s2 {
+    font-size: 22px;
+    width: 30%;
+
+}
+
+.text-vd {
+    margin: 5%;
+
+}
+
+.text ul li {
+    list-style-type: none;
+    list-style-image: url(img/section2/Ellipse.svg);
+}
+
+/*
+.text ul ::before {
+    
+    content: ;
+    color: white;
+}
+*/
+
+.video-block {
+    display: flex;
+    width: 60%;
+}
+
+
+.section-1-video {
+    width: 50%; /*315px;*/
+    height: 232px;
+    background: url("img/section1/video.png")
+
+}
+
+
+
+.info-block {
+    box-sizing: border-box;
+    background-color: #ec9e03;
+    height: 232px;
+    overflow: hidden;
+    width: 50%;
+}
+
+.twitter-box{
+    display: flex;
+    width: 30%;
+
+}
+
+.twitter {
+    display: flex;
+    background-color: #ec9e03;
+    height: 233px; 
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.input-tw{
+    display: none;
+}
+
+.tw-num {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-right: 19px;
+    margin-left: 85%;
+}
+
+.tw-img {
+    flex-basis: 163px;
+    height: 133px;
+}
+
+.plus {
+    opacity: 0.5;
+    margin-bottom: 13px;
+    margin-left: 90%;
+    cursor:pointer;    
+}
+
+.plus:hover{
+    opacity: 0.9;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.date {
+    display: flex;
+    flex-basis: 113px;
+    height: 86px;
+    background-color: #ddb101;
+    margin-bottom: 28px;
+    flex-direction: column;
+    align-items: center;
+}
+    
+
+.day {
+    font-size: 51px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.month {
+    font-size: 21px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+
+.scroll {
+    height: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+.section2-img {
+    width:60%;
+    height: 298px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        max-width: 640px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .header{
+        margin-top: 0;
+        margin-left: 0;
+        height: 62px;
+        margin-right: 0;
+    }
+
+    
+    .banner-background {
+        width: 640px;
+        height: 389px;
+    }
+
+    .slider img, .video-title, .date, .scroll, .text-s2, .h, .tw-num {
+        display: none;
+    }    
+
+    .section2-img {
+        width: 100%;
+    }
+/* Logo */
+    .logo {
+        
+        display: flex; 
+        align-items: center;
+        height: 62px;
+        width: 29%;
+        margin-left: 2%;
+
+    }
+    
+    .logo-pic-1 {
+        display: inline-block;
+        background-image: url("img/logo/logo-pic-1.png"); 
+        background-size: contain;
+        padding: 0;
+    }
+    
+    
+    .logo-pic-2 {
+        opacity: 0.5;
+    }
+    
+    .logo-pic-size-header {
+        max-width: 38px;
+        max-height: 38px;
+    }
+    
+    .logo-pic-size-footer {
+        max-width: 29px;
+        max-height: 29px;
+    }
+    
+    .logo-text {
+        font-size: 14px;
+    }
+    
+/* navigation */
+
+
+    .nav {
+        width: 71%;
+        height: 62px;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+       
+    }
+
+    .nav-button {
+        flex-grow: 1;
+        width: 33%;
+        font-size: 14px;
+    }
+
+
+    .slider-video {
+        width: 100%;
+        height: 327px;
+    }
+
+    /* icons */
+    .icon-area{
+        height: 174px;
+    }
+
+    .icon {
+        border: 0;
+    }
+
+
+    .row {
+        
+        flex-direction: column;
+    }
+
+    .video-block {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: white;
+        padding: 8px;
+    }
+
+    .info-block{
+        margin-right: 4px;
+
+    }
+
+    .section-1-video{
+        margin-left: 4px;
+    }
+
+    .s1 {
+        height: 466px;
+    }
+
+    .s2 {
+        justify-content: center;
+    }
+
+    .twitter-box {
+        width:100%;
+        height: 233px;
+        background-color: #f5c507;
+    }
+
+    .input-tw {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .twitter {
+        width: 50%;
+        height: 233px;
+        background-color: #f5c507;
+
+    }
+
+    .message{
+        color: #8f8e8e;
+        height: 42px;
+        width: 100%;
+        padding-left: 10px;
+        border-radius: 15px;
+
+    }
+
+    .m-1 {
+        background: no-repeat url("img/section1/tw1.png");
+    }
+
+    .m-2 {
+        background: no-repeat url("img/section1/tw2.png");
+    }
+
+    .m-3 {
+        background: no-repeat url("img/section1/tw3.png");
+    }
+    
+    .tw-input{
+        border-top-left-radius : 15px;
+        border-bottom-left-radius : 15px;
+        width:60%;
+        height: 42px;
+
+    }
+
+    .tw-button{
+        background-color: #dd9c1a;
+        border-top-right-radius : 15px;
+        border-bottom-right-radius : 15px;
+        width: 28%;
+        height: 42px;
+
+    }
+
+
+
+
+  }
