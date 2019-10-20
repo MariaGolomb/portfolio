@@ -95,8 +95,32 @@
     display: flex;
     justify-content: space-between;
 
+    &--button {
+        display: none;
+        margin: 10px;
+    }
+
+    
+
     &--text{
-        padding: 15px;
+        padding: 10px;
+        text-align: left;
+        width: 50%;
+
+        ul {
+            margin-left: 20px;
+            list-style-type: none;
+        }
+
+        &_pointer_block {
+            border: solid black 1px;
+            display: flex;
+            width: 60%;
+        }
+
+        &_pointer{
+            font-size: 62px;
+        }
     }
 
 }
@@ -160,18 +184,52 @@
     animation-name: left;
     animation-direction: reverse;
   }
+
+  .show_description {
+    display: block !important;
+    position: absolute;
+    background-color: white;
+    border: 1px black solid;
+    top:10%;
+  }
+
+
+
   
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     .description {
       flex-direction: column;
       align-items: center;
+
+      &--text{
+        padding: 10px;
+        text-align: center;
+        }
+
+      &--text_pointer_block {
+          display: none;
+        }
     }
   }
 
-  @media (max-width: 545px) {
+  @media (max-width: 560px) {
       .control--right,
       .control--left{
           display: none;
       }
+
+      .description {
+          border: 0;
+
+          &--button {
+              display: block;
+          }
+          &--text {
+            display: none;
+          }
+      }
+
+
+
   }
   
