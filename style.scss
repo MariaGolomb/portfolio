@@ -57,7 +57,121 @@
 }
 
 .slider {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
 
+.conteiner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.item {
+    position: relative;
+    margin: 0 auto;
+    display: none;
+    animation: 0.5s ease-in-out;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+.active,
+.next {
+    display: block;
 }
 
 
+
+.description {
+    margin: 30px 20%;
+    font-size: 32px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+
+    &--text{
+        padding: 15px;
+    }
+
+}
+
+.control--left{
+        position: absolute;
+        width: 15%;
+        right: auto;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+
+.control--right{
+        position: absolute;
+        width: 15%;
+        right: 0;
+        left: auto;
+        top: 0;
+        height: 100%;
+    }
+
+.arrow--left,
+.arrow--right {
+    position: absolute;
+    top: 50%;
+}
+
+@keyframes left {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes right {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  .to-left {
+    animation-name: left;
+  }
+  
+  .from-right {
+    animation-name: right;
+  }
+  
+  .to-right {
+    animation-name: right;
+    animation-direction: reverse;
+  }
+  
+  .from-left {
+    animation-name: left;
+    animation-direction: reverse;
+  }
+  
+  @media (max-width: 800px) {
+    .description {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 545px) {
+      .control--right,
+      .control--left{
+          display: none;
+      }
+  }
+  

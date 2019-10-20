@@ -50,4 +50,152 @@
 .education--expansion_panel li {
   border: 1px solid black;
 }
+
+.slider {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.conteiner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.item {
+  position: relative;
+  margin: 0 auto;
+  display: none;
+  -webkit-animation: 0.5s ease-in-out;
+          animation: 0.5s ease-in-out;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.active,
+.next {
+  display: block;
+}
+
+.description {
+  margin: 30px 20%;
+  font-size: 32px;
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description--text {
+  padding: 15px;
+}
+
+.control--left {
+  position: absolute;
+  width: 15%;
+  right: auto;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.control--right {
+  position: absolute;
+  width: 15%;
+  right: 0;
+  left: auto;
+  top: 0;
+  height: 100%;
+}
+
+.arrow--left,
+.arrow--right {
+  position: absolute;
+  top: 50%;
+}
+
+@-webkit-keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.to-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+}
+
+.from-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+}
+
+.to-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+  animation-direction: reverse;
+}
+
+@media (max-width: 800px) {
+  .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 545px) {
+  .control--right,
+  .control--left {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

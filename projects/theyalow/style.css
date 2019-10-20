@@ -140,8 +140,7 @@ body {
 
 .slider-video {
     max-width: 100%;
-    height: auto;
-    /*height: 327px;*/
+    height: 327px;
 }
 .video-title {
     width: 25%;
