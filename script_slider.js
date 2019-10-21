@@ -52,12 +52,14 @@ document.querySelector('.control--right').addEventListener('click', function(){
 
 const swipedetect=(el)=>{
 
+    console.log('swipedetect!')
+
     let surface=el;
     let startX=0;
     let startY=0;
     let distX=0;
     let distY=0;
-    let dist=0;
+    //let dist=0;
 
     let startTime=0;
     let elapsedTime=0;
