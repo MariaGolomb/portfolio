@@ -24,10 +24,13 @@
 
 .education {
   width: 100%;
-}
-
-.education:hover .education--expansion_panel {
-  display: block;
+  /*   
+    &:hover {
+        .education--expansion_panel {
+            display: block;
+        }
+    }
+*/
 }
 
 .education--header {
@@ -40,7 +43,6 @@
 .education--expansion_panel {
   border: 3px solid black;
   border-top: 0;
-  display: none;
 }
 
 .education--expansion_panel ul {

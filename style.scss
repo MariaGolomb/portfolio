@@ -24,15 +24,13 @@
 
 .education {
     width: 100%;
-    
+ /*   
     &:hover {
         .education--expansion_panel {
             display: block;
         }
-
-        
     }
-
+*/
     &--header {
         border: black solid 3px;
         display: flex;
@@ -42,7 +40,6 @@
     &--expansion_panel {
         border: 3px solid black;
         border-top: 0;
-        display: none;
 
         ul {
             list-style: none;

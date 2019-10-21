@@ -29,6 +29,18 @@ function displayButtons(numOfIframe){
 }
 
 
+function displayEducation(){
+    console.log('start')
+    console.log(document.querySelector('#education--expansion_panel').classList)
+    if(document.querySelector('#education--expansion_panel').classList.contains('close_element')){
+       document.querySelector('#education--expansion_panel').classList.remove('close_element')
+    } else {
+        document.querySelector('#education--expansion_panel').classList.add('close_element')
+    }
+}
+
+document.getElementById('education-button').addEventListener('click', function(){ displayEducation()})
+
 
 document.getElementById('iframe_open_1').addEventListener('click', function(){
     displayButtons('1');
@@ -57,8 +69,6 @@ document.getElementById('button_mobile_1').addEventListener('click', function(){
     changeDisplay('iframe_1', 'iframe_mobile');
     document.querySelector('#button_mobile_1').classList.add('close_element');
     document.querySelector('#button_desktop_1').classList.remove('close_element');
-    
-     
 });
 
 document.getElementById('button_mobile_2').addEventListener('click', function(){
@@ -79,6 +89,8 @@ document.getElementById('button_desktop_2').addEventListener('click', function()
     document.querySelector('#button_mobile_2').classList.remove('close_element');
 });
 
+
+
 //--mobile
 function touch(surface, numOfIframe){
     let startTime=0;
@@ -87,11 +99,7 @@ function touch(surface, numOfIframe){
     let distX=0;
     let distY=0;
 
-
-    
-
     surface.addEventListener('touchstart', function(e){
-        console.log(e)
         let touchObj=e.changedTouches[0];
         startX=touchObj.pageX;
         startY=touchObj.pageY;
@@ -100,7 +108,6 @@ function touch(surface, numOfIframe){
     })
 
     surface.addEventListener('touchend', function(e){
-        console.log(e)
         let touchObj=e.changedTouches[0];
         touchTime=new Date().getTime()-startTime;
         distX=touchObj.pageX-startX;
@@ -147,7 +154,6 @@ document.getElementById('button_desktop_1').addEventListener('touchstart', funct
 document.getElementById('button_desktop_2').addEventListener('touchstart', function(){
     changeDisplay('iframe_2', 'iframe_desktop')
 });
-
 
 
 
