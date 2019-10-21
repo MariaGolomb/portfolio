@@ -4,8 +4,23 @@
  
 }
 
+@font-face {
+    font-family: "Hind Regular"; 
+        src: url(fonts/Hind/Hind-Regular.ttf) 
+    format('truetype')
+ }
+
+ @font-face {
+    font-family: "YesevaOne Regular"; 
+        src: url(fonts/Yeseva_One/YesevaOne-Regular.ttf) 
+    format('truetype')
+ }
+ 
+
+
 body {
     background-color: white;
+    font-family: "Hind Regular", "YesevaOne Regular", sans-serif;
 
 }
 
@@ -36,7 +51,7 @@ body {
 
 .banner-background {
     display: flex;
-    background-image: url("img/banner_header_bck.png");
+    background-image: url("img/banner_header_bck.png"), url("img/2.png"),url("img/1.png");
     max-width: 1300px;
     height: 566px;
     flex-wrap: wrap;
@@ -166,6 +181,7 @@ body {
 
 .icon-area {
     background-color: white;
+    background-image: url("img/icon-area/background.png");
     height: 212px;
     align-items: baseline;
 }
@@ -173,11 +189,12 @@ body {
 .icon {
     display: flex;
     flex-wrap: wrap;
+    background-image: url("img/icon-area/background.png");
     justify-content: center;
     align-items: flex-end;
     padding: 38px 0;
     width: 33%;
-    height: 70%;
+    height: 64%;
     text-align: center;
     border-left: 1px solid #d4d4d4; 
     border-right: 1px solid #d4d4d4;
@@ -206,12 +223,12 @@ body {
 }
 
 .text-s1 {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .text-s2 {
     font-size: 22px;
-    width: 30%;
+    width: 35%;
 
 }
 
@@ -220,22 +237,17 @@ body {
 
 }
 
-.text ul li {
-    list-style-type: none;
+.text ul {
     list-style-image: url(img/section2/Ellipse.svg);
+    padding: 20px;
 }
 
-/*
-.text ul ::before {
-    
-    content: ;
-    color: white;
-}
-*/
+.text li {
+    padding-top: 10px;}
 
 .video-block {
     display: flex;
-    width: 60%;
+    width: 50%;
 }
 
 
@@ -254,6 +266,7 @@ body {
     height: 232px;
     overflow: hidden;
     width: 50%;
+    position: relative;
 }
 
 .twitter-box{
@@ -270,6 +283,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
 }
 
@@ -279,21 +293,25 @@ body {
 
 .tw-num {
     font-size: 24px;
-    padding-top: 20px;
-    padding-right: 19px;
-    margin-left: 85%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .tw-img {
     flex-basis: 163px;
     height: 133px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
 }
 
 .plus {
     opacity: 0.5;
-    margin-bottom: 13px;
-    margin-left: 90%;
-    cursor:pointer;    
+    cursor:pointer; 
+    position: absolute; 
+    bottom: 10px;
+    right: 10px;  
 }
 
 .plus:hover{
@@ -314,6 +332,8 @@ body {
     margin-bottom: 28px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    line-height: 0.8;
 }
     
 
@@ -321,6 +341,7 @@ body {
     font-size: 51px;
     letter-spacing: 1px;
     font-weight: bold;
+    
 }
 
 .month {
@@ -336,9 +357,41 @@ body {
     margin: auto;
 }
 
+/*
 .section2-img {
+    
+}
+*/
+.displays {
     width:60%;
     height: 298px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.mark {
+    width: 116px;
+    height: 116px;
+    text-transform: uppercase;
+    background-color: #f5c506;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+
+}
+
+.section2-img1{
+    position: relative;
+}
+
+.section2-img2,
+.section2-img3 {
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -366,8 +419,10 @@ body {
         display: none;
     }    
 
-    .section2-img {
-        width: 100%;
+
+    .displays {
+        width: 80%;
+        align-self: center;
     }
 /* Logo */
     .logo {
@@ -429,6 +484,11 @@ body {
     .slider-video {
         width: 100%;
         height: 327px;
+        object-fit: inherit;
+    }
+
+    .main {
+        max-width: 640px;
     }
 
     /* icons */
@@ -442,7 +502,6 @@ body {
 
 
     .row {
-        
         flex-direction: column;
     }
 
@@ -495,8 +554,9 @@ body {
         color: #8f8e8e;
         height: 42px;
         width: 100%;
-        padding-left: 10px;
+        padding-left: 30px;
         border-radius: 15px;
+        font-size: 14px;
 
     }
 
@@ -528,8 +588,6 @@ body {
         height: 42px;
 
     }
-
-
 
 
   }
