@@ -14,12 +14,13 @@
         <header class="header">
             <div class="header--logo">IC "Repair Design Project"</div>
             <nav class="nav">
-                <div class="nav--item-checked"><a href="#home">HOME</a></div>
+                
                 <div class="nav--item"><a href="#projects">PROJECTS</a></div>
                 <div class="nav--item"><a href="#measurement">MEASUREMENT</a></div>
                 <div class="nav--item"><a href="#team">TEAM</a></div>
                 <div class="nav--item"><a href="#reviews">REVIEWS</a></div>
                 <div class="nav--item"><a href="#contacts">CONTACTS</a></div>
+                <div class="nav--item-checked"><a href="#home">HOME</a></div>
             </nav>
             <div class="header--phone"><a>+7 (928) 768-32-39</a></div>
             <button class="header--button">Request a call</button>
@@ -47,16 +48,17 @@
 
             <div class="section_grid_1--scroll">
                     <div class="section_grid_1--scroll_text">Scroll down</div>
-                    <a href="#projects"><img class="section_grid_1--scroll_img" src="img/scrool.svg" width="29px" height="29px"></a>
+                    <a href="#projects"><img class="section_grid_1--scroll_img" src="img/scrool.svg" width="29" height="29"></a>
             </div>
 
     </div>
 
     <section class="completed_projects" id="projects">
         <div class="completed_projects_menu">
-            <div class="completed_projects_menu--item-checked">Rostov-on-Don Patriotic</div>
+            
             <div class="completed_projects_menu--item">Sochi Thieves</div>
             <div class="completed_projects_menu--item">Rostov-on-Don, Admiral</div>
+            <div class="completed_projects_menu--item-checked">Rostov-on-Don Patriotic</div>
         </div>
 
         <div class="completed_projects_information">
@@ -147,11 +149,15 @@
                 receive a link to the broadcast.
         </div>
         <form class="online_control--form" action="" method="post">
-            <label class="online_control--form_name_label form_label" for="name">Name: </label>
-            <input class="online_control--form_name_input form_input" id="name" type="text" name="name" required placeholder="What is your name:" pattern="[A-Za-z -]+" minlength="2" > 
+            <div class="form--item_online_control online_control--form_name">
+                <label class="online_control--form_name_label form--item_label_grid form_label" for="name">Name: </label>
+                <input class="online_control--form_name_input form--item_input_grid form_input online_control--form_input" id="name" type="text" name="name" required placeholder="What is your name:" pattern="[A-Za-z -]+" minlength="2" > 
+            </div>
 
-            <label class="online_control--form_phone_label form_label" for="phone">Phone: </label>
-            <input class="online_control--form_phone_input form_input" id="phone" type="text" name="phone" required placeholder="Your phone number:" pattern="[+][0-9]{7}">  
+            <div class="form--item_online_control online_control--form_phone">
+                <label class="online_control--form_phone_label form--item_label_grid form_label" for="phone">Phone: </label>
+                <input class="online_control--form_phone_input form--item_input_grid form_input online_control--form_input" id="phone" type="text" name="phone" required placeholder="Your phone number:" pattern="[+][0-9]{7}">  
+            </div>
 
             <input class="online_control--form_submit form_submit" type="submit" value="Submit">
 
@@ -277,6 +283,7 @@
     </section>
 
     <section class="styles">
+        <h3 class="styles--headr_for_mobile">We realize your wildest fantasies</h3>
 
     <div class="styles_background"></div>
         <div class="styles_info">
@@ -382,13 +389,6 @@
                                 </div>
                             </div>
                         </div>
-    
-
-
-
-
-
-
     </section>
 
 
@@ -432,7 +432,7 @@
                 <li>Acceptance of work</li>
             </ol>
 
-            <img class="steps--list_block_img" src="img/steps.png" width="731px" height="656">
+            <img class="steps--list_block_img" src="img/steps.png">
         </div>       
     </section>
 
@@ -584,36 +584,41 @@
 
     </section>
 
-    <section class="questions">
-        <form class="questions--form" action="" method="post">
-                    <div class="questions--form_head">have any questions?</div>
-                    <div class="form--item questions--form_name">
-                        <label class="form_label form--item_label_grid" for="name2">Name: </label>
-                        <input class="form_input form--item_input_grid" id="name2" type="text" name="name" required placeholder="What is your name:" pattern="[A-Za-z -]+" minlength="2" > 
-                    </div>
-                    <div class="form--item questions--form_phone">
-                        <label class="form_label form--item_label_grid" for="phone2">Phone: </label>
-                        <input class="form_input form_input form--item_input_grid" id="phone2" type="text" name="phone" required placeholder="Your phone number:" pattern="[+][0-9]{7}">  
-                    </div>
 
-
-                    <div class="form--item questions--form_question">
-                        <label class="form_label form--item_label_grid" for="question">Question </label>
-                        <input class="form_input form_input form--item_input_grid" id="question" type="text" name="question" required placeholder="I want to know:">  
-                    </div>
-
-                    <div class="measurer--form_agree form_checkbox questions--form_checkbox">
-                            <input type="checkbox" name="agreement" id="agreement2" required checked value="agree" hidden>
-                            <label for="agreement2"> agree to the processing of personal data</label> 
-                    </div>
-        
-                    <input class="questions--form_submit form_submit" type="submit" value="Call the measurer">
-        
-        </form>
-
-    </section>
 
     <section class="adress" id="contacts">
+
+            <form class="questions--form" action="" method="post">
+                <div class="questions--form_head">have any questions?</div>
+                <div class="form--item questions--form_name">
+                    <label class="form_label form--item_label_grid" for="name2">Name: </label>
+                    <input class="form_input form--item_input_grid questions--form_input" id="name2" type="text" name="name" required placeholder="What is your name:" pattern="[A-Za-z -]+" minlength="2" > 
+                </div>
+                <div class="form--item questions--form_phone">
+                    <label class="form_label form--item_label_grid" for="phone2">Phone: </label>
+                    <input class="form_input form_input form--item_input_grid questions--form_input" id="phone2" type="text" name="phone" required placeholder="Your phone number:" pattern="[+][0-9]{7}">  
+                </div>
+            
+            
+                <div class="form--item questions--form_question">
+                    <label class="form_label form--item_label_grid" for="question">Question </label>
+                    <input class="form_input form_input form--item_input_grid questions--form_input" id="question" type="text" name="question" required placeholder="I want to know:">  
+                </div>
+            
+                <div class="measurer--form_agree form_checkbox questions--form_checkbox">
+                    <input type="checkbox" name="agreement" id="agreement2" required checked value="agree" hidden>
+                    <label for="agreement2"> agree to the processing of personal data</label> 
+                </div>
+                    
+                <input class="questions--form_submit form_submit" type="submit" value="Submit">
+                    
+            </form>
+            
+   
+
+
+
+
         <div class="adress_text">
             <p>Rostov-on-Don, Nansen St., 239 Shopping Center<br>
                     Decorum Tel +7 (928) 768 32 29</p>
